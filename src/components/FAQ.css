@@ -1,0 +1,145 @@
+.faq-section {
+  background: #000000;
+  color: #ffffff;
+  padding: 120px 0;
+}
+
+.faq-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 80px;
+  align-items: flex-start;
+}
+
+.faq-header {
+  position: sticky;
+  top: 120px;
+}
+
+.faq-title {
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 0.9;
+  color: #ffffff;
+}
+
+.faq-highlight {
+  color: #7ed321;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.faq-item {
+  background: rgba(126, 211, 33, 0.05);
+  border: 1px solid #333333;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+  border-color: #7ed321;
+  background: rgba(126, 211, 33, 0.1);
+}
+
+.faq-item.active {
+  border-color: #7ed321;
+  background: rgba(126, 211, 33, 0.1);
+}
+
+.faq-question {
+  width: 100%;
+  background: none;
+  border: none;
+  color: #ffffff;
+  padding: 25px 30px;
+  text-align: left;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.faq-question:hover {
+  color: #7ed321;
+}
+
+.faq-icon {
+  width: 40px;
+  height: 40px;
+  background: rgba(126, 211, 33, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #7ed321;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+
+.faq-item.active .faq-icon {
+  background: #7ed321;
+  color: #000000;
+  transform: rotate(45deg);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 200px;
+}
+
+.faq-answer p {
+  padding: 0 30px 25px;
+  margin: 0;
+  color: #cccccc;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .faq-container {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .faq-header {
+    position: static;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .faq-container {
+    padding: 0 20px;
+  }
+
+  .faq-question {
+    padding: 20px;
+    font-size: 1rem;
+  }
+
+  .faq-answer p {
+    padding: 0 20px 20px;
+  }
+
+  .faq-icon {
+    width: 35px;
+    height: 35px;
+  }
+}

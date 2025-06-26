@@ -1,0 +1,46 @@
+.client-logos-section {
+  background-color: #111;
+  padding: 30px 5%;
+  border-top: 1px solid #222;
+}
+
+.client-logos-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logos-scroll {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.client-logo {
+  color: #666;
+  font-weight: 600;
+  text-transform: lowercase;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.client-logo:hover {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .logos-scroll {
+    gap: 30px;
+    justify-content: center;
+  }
+  
+  .client-logo {
+    font-size: 0.8rem;
+  }
+}

@@ -1,0 +1,101 @@
+.brand-rec-section {
+  background-color: #7ed321;
+  color: #111;
+  padding: 100px 5%;
+  overflow: hidden;
+}
+
+.brand-rec-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.brand-rec-text {
+  max-width: 40%;
+}
+
+.brand-rec-text h2 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  line-height: 1.2;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.brand-rec-text p {
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.explore-link {
+  color: #111;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.brand-rec-visual {
+  perspective: 1000px;
+}
+
+.phone-stack {
+  position: relative;
+  width: 250px;
+  height: 500px;
+  transform-style: preserve-3d;
+  transform: rotateY(-15deg);
+}
+
+.phone {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  background-color: #333;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px 20px;
+  color: #fff;
+  border: 4px solid #444;
+}
+
+.phone-front {
+  background: linear-gradient(135deg, #ff6b6b, #4ecdc4);
+  transform: translateZ(40px);
+  z-index: 3;
+}
+
+.phone-middle {
+  transform: translateZ(20px);
+  z-index: 2;
+}
+
+.phone-back {
+  transform: translateZ(0px);
+  z-index: 1;
+}
+
+.phone-number {
+  font-size: 4rem;
+  font-weight: 900;
+}
+
+.phone-front h3 {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 992px) {
+  .brand-rec-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .brand-rec-text {
+    max-width: 100%;
+    margin-bottom: 60px;
+  }
+}
