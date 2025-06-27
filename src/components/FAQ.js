@@ -39,7 +39,7 @@ const FAQ = () => {
   return (
     <section className="faq-section">
       <div className="faq-container">
-        <div className="faq-header">
+        <div className="faq-header scroll-reveal-left">
           <h2 className="faq-title">
             FREQUENTLY
             <br />
@@ -49,7 +49,7 @@ const FAQ = () => {
           </h2>
         </div>
 
-        <div className="faq-list">
+        <div className="faq-list scroll-reveal-right">
           {faqs.map((faq, index) => (
             <div
               key={index}
