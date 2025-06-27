@@ -3,35 +3,34 @@ import "./Hero.css";
 
 const Hero = () => {
   return (
-    <section id="home" className="hero-section">
+    <section className="hero-section">
       <div className="hero-container">
         <div className="hero-content">
           <div className="hero-text">
             <h1 className="hero-title">
               <span className="title-line">
-                WE <span className="outlined-text">ARE</span>
+                WE ARE <span className="outlined-text">CREATIVE</span>
               </span>
               <span className="title-line">
-                <span className="green-text">SKILLED</span> IN
+                <span className="green-text">DESIGN</span> AGENCY
               </span>
               <div className="title-bottom">
                 <span className="small-text">
-                  LOREM
+                  LOREM IPSUM DOLOR SIT
                   <br />
-                  IPSUM
+                  AMET CONSECTETUR
                 </span>
-                <span className="and-text">AND</span>
-                <span className="pill-text">LOREM IPSUM</span>
+                <span className="and-text">&</span>
+                <span className="pill-text">DEVELOPMENT</span>
               </div>
             </h1>
             <p className="hero-description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
+              We create digital experiences that combine beautiful design with
+              powerful functionality. Our team delivers innovative solutions
+              that help your business grow and succeed in the digital world.
             </p>
             <button className="hero-cta">
-              GET STARTED NOW
+              GET STARTED
               <svg width="20" height="16" viewBox="0 0 20 16" fill="none">
                 <path
                   d="M12 1L19 8L12 15M19 8H1"
@@ -45,26 +44,31 @@ const Hero = () => {
           </div>
 
           <div className="hero-visual">
-            <div className="hero-circle">
-              <div className="team-image">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F9f0b52c0859649e0acc31a2a0ba5605d%2F1741e3063d5f4bd4a9d6c259f93dcbe9?format=webp&width=800"
-                  alt="Our Team"
-                />
-              </div>
-              <div className="stat-badge">
-                <span className="stat-number">01</span>
-              </div>
-              <div className="play-button">
-                <div className="play-icon">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                    <path d="M8 5V19L19 12L8 5Z" fill="currentColor" />
-                  </svg>
+            <div className="hero-circle-container">
+              <div className="hero-circle-left"></div>
+              <div className="hero-circle-right"></div>
+              
+              <div className="team-image-container">
+                <div className="team-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&h=400&fit=crop&crop=faces"
+                    alt="Our Team"
+                  />
                 </div>
-              </div>
-              <div className="watch-label">
-                <span>WATCH</span>
-                <span>VIDEO</span>
+                <div className="stat-badge">
+                  <span className="stat-number">01</span>
+                </div>
+                <div className="play-button">
+                  <div className="play-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <path d="M8 5V19L19 12L8 5Z" fill="currentColor" />
+                    </svg>
+                  </div>
+                </div>
+                <div className="watch-label">
+                  <span>WATCH</span>
+                  <span>VIDEO</span>
+                </div>
               </div>
             </div>
           </div>
