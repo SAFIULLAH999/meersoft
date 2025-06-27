@@ -23,7 +23,6 @@ const Hero = () => {
                 <span className="and-text">AND</span>
                 <span className="pill-text">LOREM IPSUM</span>
               </div>
-              <div></div>
             </h1>
             <p className="hero-description">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
