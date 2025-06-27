@@ -6,7 +6,7 @@ const Hero = () => {
     <section className="hero-section">
       <div className="hero-container">
         <div className="hero-content">
-          <div className="hero-text">
+          <div className="hero-text scroll-reveal-left">
             <h1 className="hero-title">
               <span className="title-line">
                 WE ARE <span className="outlined-text">CREATIVE</span>
@@ -47,7 +47,7 @@ const Hero = () => {
             <div className="hero-circle-container">
               <div className="hero-circle-left"></div>
               <div className="hero-circle-right"></div>
-              
+
               <div className="team-image-container">
                 <div className="team-image">
                   <img

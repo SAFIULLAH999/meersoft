@@ -27,7 +27,7 @@ const Contact = () => {
     <section id="contact" className="contact-section">
       <div className="contact-container">
         <div className="contact-content">
-          <div className="contact-info">
+          <div className="contact-info scroll-reveal-left">
             <h2 className="contact-title">
               LET'S DISCUSS ON
               <br />
@@ -104,7 +104,7 @@ const Contact = () => {
             </div>
           </div>
 
-          <div className="contact-form-wrapper">
+          <div className="contact-form-wrapper scroll-reveal-right">
             <form className="contact-form" onSubmit={handleSubmit}>
               <div className="form-group">
                 <input
